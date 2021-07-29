@@ -19,6 +19,6 @@ Event OnDanceCommand(string eventName, string command, float _, Form sender)
         selectedActor = GetActorReference()
     endIf
     string actorName = selectedActor.GetBaseObject().GetName()
-    MiscUtil.PrintConsole("Dance, " + actorName + "dance!")
+    MiscUtil.PrintConsole("Dance, " + actorName + ", dance!")
     Debug.SendAnimationEvent(selectedActor, "IdleCiceroDance1")
 EndEvent
